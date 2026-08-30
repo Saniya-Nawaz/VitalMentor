@@ -1,0 +1,834 @@
+/* =========================================================
+   VITALMENTOR MODERN UI
+   ========================================================= */
+
+@import url(
+'https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800&family=Poppins:wght@500;600;700;800&display=swap'
+);
+
+
+/* =========================================================
+   GLOBAL
+   ========================================================= */
+
+html,
+body,
+[class*="css"] {
+
+    font-family: 'Inter', sans-serif;
+
+}
+
+
+.stApp {
+
+    background:
+
+        radial-gradient(
+            circle at 10% 10%,
+            rgba(59,130,246,0.20),
+            transparent 25%
+        ),
+
+        radial-gradient(
+            circle at 90% 10%,
+            rgba(124,58,237,0.20),
+            transparent 25%
+        ),
+
+        radial-gradient(
+            circle at 50% 100%,
+            rgba(16,185,129,0.12),
+            transparent 30%
+        ),
+
+        #080b14;
+
+    color: #f8fafc;
+
+}
+
+
+/* =========================================================
+   HIDE STREAMLIT DEFAULT
+   ========================================================= */
+
+#MainMenu {
+
+    visibility: hidden;
+
+}
+
+
+footer {
+
+    visibility: hidden;
+
+}
+
+
+header[data-testid="stHeader"] {
+
+    background: transparent;
+
+}
+
+
+/* =========================================================
+   MAIN
+   ========================================================= */
+
+.block-container {
+
+    max-width: 1300px;
+
+    padding-top: 2rem;
+
+    padding-bottom: 4rem;
+
+}
+
+
+/* =========================================================
+   LOGIN
+   ========================================================= */
+
+.login-page {
+
+    text-align: center;
+
+    padding-top: 50px;
+
+}
+
+
+.login-logo {
+
+    width: 90px;
+
+    height: 90px;
+
+    margin: auto;
+
+    display: flex;
+
+    align-items: center;
+
+    justify-content: center;
+
+    border-radius: 28px;
+
+    font-size: 48px;
+
+    background:
+
+        linear-gradient(
+            135deg,
+            #3b82f6,
+            #7c3aed
+        );
+
+    box-shadow:
+
+        0 15px 45px
+        rgba(59,130,246,0.40);
+
+    animation:
+        floating 3s ease-in-out infinite;
+
+}
+
+
+@keyframes floating {
+
+    0%,
+    100% {
+
+        transform:
+            translateY(0);
+
+    }
+
+    50% {
+
+        transform:
+            translateY(-8px);
+
+    }
+
+}
+
+
+.login-title {
+
+    margin-top: 18px;
+
+    font-family: 'Poppins',
+    sans-serif;
+
+    font-size: 42px;
+
+    font-weight: 800;
+
+    background:
+
+        linear-gradient(
+            90deg,
+            #60a5fa,
+            #a78bfa,
+            #34d399
+        );
+
+    -webkit-background-clip: text;
+
+    -webkit-text-fill-color: transparent;
+
+}
+
+
+.login-subtitle {
+
+    color: #94a3b8;
+
+    font-size: 15px;
+
+    margin-top: 5px;
+
+}
+
+
+.login-badges {
+
+    margin-top: 18px;
+
+    margin-bottom: 35px;
+
+}
+
+
+.login-form-title {
+
+    text-align: center;
+
+    font-family: 'Poppins',
+    sans-serif;
+
+    font-size: 25px;
+
+    font-weight: 800;
+
+    margin-bottom: 5px;
+
+}
+
+
+.login-form-subtitle {
+
+    text-align: center;
+
+    color: #94a3b8;
+
+    font-size: 14px;
+
+    margin-bottom: 20px;
+
+}
+
+
+.login-footer {
+
+    text-align: center;
+
+    color: #64748b;
+
+    font-size: 12px;
+
+    margin-top: 20px;
+
+}
+
+
+/* =========================================================
+   INPUT
+   ========================================================= */
+
+div[data-baseweb="input"] {
+
+    background:
+        rgba(255,255,255,0.06)
+        !important;
+
+    border:
+        1px solid
+        rgba(255,255,255,0.12)
+        !important;
+
+    border-radius: 14px
+    !important;
+
+}
+
+
+div[data-baseweb="input"]:focus-within {
+
+    border:
+        1px solid
+        #60a5fa
+        !important;
+
+    box-shadow:
+
+        0 0 0 3px
+        rgba(59,130,246,0.15);
+
+}
+
+
+input {
+
+    color: white !important;
+
+}
+
+
+/* =========================================================
+   BUTTON
+   ========================================================= */
+
+.stButton > button {
+
+    border: none;
+
+    border-radius: 14px;
+
+    min-height: 48px;
+
+    font-weight: 700;
+
+    color: white;
+
+    background:
+
+        linear-gradient(
+            135deg,
+            #3b82f6,
+            #7c3aed
+        );
+
+    box-shadow:
+
+        0 10px 30px
+        rgba(59,130,246,0.25);
+
+    transition:
+        all 0.25s ease;
+
+}
+
+
+.stButton > button:hover {
+
+    transform:
+        translateY(-2px);
+
+    box-shadow:
+
+        0 15px 35px
+        rgba(124,58,237,0.35);
+
+}
+
+
+/* =========================================================
+   HEADER
+   ========================================================= */
+
+.header {
+
+    padding: 28px 32px;
+
+    border-radius: 25px;
+
+    margin-bottom: 25px;
+
+    font-family:
+        'Poppins',
+        sans-serif;
+
+    font-size: 31px;
+
+    font-weight: 800;
+
+    background:
+
+        linear-gradient(
+            135deg,
+            rgba(59,130,246,0.22),
+            rgba(124,58,237,0.22)
+        );
+
+    border:
+
+        1px solid
+        rgba(255,255,255,0.10);
+
+    box-shadow:
+
+        0 15px 45px
+        rgba(0,0,0,0.25);
+
+}
+
+
+.header-small {
+
+    margin-top: 5px;
+
+    color: #94a3b8;
+
+    font-family:
+        'Inter',
+        sans-serif;
+
+    font-size: 14px;
+
+    font-weight: 500;
+
+}
+
+
+/* =========================================================
+   WELCOME CARD
+   ========================================================= */
+
+.welcome-card {
+
+    padding: 25px 28px;
+
+    margin-bottom: 25px;
+
+    border-radius: 22px;
+
+    background:
+
+        linear-gradient(
+            135deg,
+            rgba(16,185,129,0.12),
+            rgba(59,130,246,0.10)
+        );
+
+    border:
+
+        1px solid
+        rgba(255,255,255,0.08);
+
+}
+
+
+.welcome-title {
+
+    font-family:
+        'Poppins',
+        sans-serif;
+
+    font-size: 22px;
+
+    font-weight: 800;
+
+}
+
+
+.welcome-text {
+
+    color: #94a3b8;
+
+    margin-top: 5px;
+
+}
+
+
+/* =========================================================
+   METRIC CARDS
+   ========================================================= */
+
+div[data-testid="stMetric"] {
+
+    padding: 20px;
+
+    border-radius: 20px;
+
+    background:
+
+        linear-gradient(
+            145deg,
+            rgba(255,255,255,0.10),
+            rgba(255,255,255,0.04)
+        );
+
+    border:
+
+        1px solid
+        rgba(255,255,255,0.09);
+
+    box-shadow:
+
+        0 10px 30px
+        rgba(0,0,0,0.20);
+
+    transition:
+        0.25s ease;
+
+}
+
+
+div[data-testid="stMetric"]:hover {
+
+    transform:
+        translateY(-5px);
+
+    border-color:
+        rgba(96,165,250,0.35);
+
+}
+
+
+div[data-testid="stMetricLabel"] {
+
+    color:
+        #94a3b8 !important;
+
+}
+
+
+div[data-testid="stMetricValue"] {
+
+    color:
+        #ffffff !important;
+
+    font-size:
+        26px !important;
+
+    font-weight:
+        800 !important;
+
+}
+
+
+/* =========================================================
+   AI CARD
+   ========================================================= */
+
+.ai-card {
+
+    padding: 28px;
+
+    margin-top: 20px;
+
+    margin-bottom: 20px;
+
+    border-radius: 25px;
+
+    background:
+
+        linear-gradient(
+            135deg,
+            rgba(124,58,237,0.25),
+            rgba(59,130,246,0.15)
+        );
+
+    border:
+
+        1px solid
+        rgba(167,139,250,0.25);
+
+    box-shadow:
+
+        0 15px 50px
+        rgba(124,58,237,0.15);
+
+}
+
+
+.ai-title {
+
+    font-family:
+        'Poppins',
+        sans-serif;
+
+    font-size: 24px;
+
+    font-weight: 800;
+
+    color: #c4b5fd;
+
+}
+
+
+.ai-card p {
+
+    color: #cbd5e1;
+
+}
+
+
+/* =========================================================
+   BADGES
+   ========================================================= */
+
+.badge {
+
+    display: inline-block;
+
+    padding: 8px 14px;
+
+    margin: 5px 4px;
+
+    border-radius: 30px;
+
+    font-size: 12px;
+
+    font-weight: 700;
+
+    background:
+
+        linear-gradient(
+            135deg,
+            rgba(59,130,246,0.25),
+            rgba(124,58,237,0.25)
+        );
+
+    border:
+
+        1px solid
+        rgba(255,255,255,0.10);
+
+}
+
+
+/* =========================================================
+   XP
+   ========================================================= */
+
+.xp-text {
+
+    font-size: 18px;
+
+    font-weight: 800;
+
+    margin: 10px 0;
+
+    color: #fbbf24;
+
+}
+
+
+/* =========================================================
+   REWARD CARDS
+   ========================================================= */
+
+.reward-card {
+
+    min-height: 175px;
+
+    padding: 22px;
+
+    text-align: center;
+
+    border-radius: 22px;
+
+    background:
+
+        linear-gradient(
+            145deg,
+            rgba(245,158,11,0.14),
+            rgba(124,58,237,0.10)
+        );
+
+    border:
+
+        1px solid
+        rgba(245,158,11,0.15);
+
+    box-shadow:
+
+        0 10px 30px
+        rgba(0,0,0,0.18);
+
+    transition:
+        0.25s ease;
+
+}
+
+
+.reward-card:hover {
+
+    transform:
+        translateY(-5px);
+
+    box-shadow:
+
+        0 15px 40px
+        rgba(245,158,11,0.15);
+
+}
+
+
+.reward-icon {
+
+    font-size: 42px;
+
+}
+
+
+.reward-title {
+
+    font-weight: 800;
+
+    font-size: 16px;
+
+    margin-top: 5px;
+
+}
+
+
+.reward-text {
+
+    color: #94a3b8;
+
+    font-size: 13px;
+
+    margin-top: 5px;
+
+}
+
+
+/* =========================================================
+   PROGRESS
+   ========================================================= */
+
+div[data-testid="stProgress"] {
+
+    margin-top: 10px;
+
+    margin-bottom: 10px;
+
+}
+
+
+div[data-testid="stProgress"] > div {
+
+    border-radius: 20px;
+
+}
+
+
+div[data-testid="stProgress"]
+> div > div {
+
+    background:
+
+        linear-gradient(
+            90deg,
+            #3b82f6,
+            #7c3aed,
+            #10b981
+        ) !important;
+
+}
+
+
+/* =========================================================
+   ALERTS
+   ========================================================= */
+
+div[data-testid="stAlert"] {
+
+    border-radius: 16px;
+
+}
+
+
+/* =========================================================
+   SIDEBAR
+   ========================================================= */
+
+section[data-testid="stSidebar"] {
+
+    background:
+
+        linear-gradient(
+            180deg,
+            #0d1220,
+            #080b14
+        );
+
+    border-right:
+
+        1px solid
+        rgba(255,255,255,0.08);
+
+}
+
+
+.sidebar-logo {
+
+    text-align: center;
+
+    font-family:
+        'Poppins',
+        sans-serif;
+
+    font-size: 22px;
+
+    font-weight: 800;
+
+    color: #60a5fa;
+
+}
+
+
+/* =========================================================
+   TABLE
+   ========================================================= */
+
+div[data-testid="stDataFrame"] {
+
+    border-radius: 18px;
+
+    overflow: hidden;
+
+    border:
+
+        1px solid
+        rgba(255,255,255,0.08);
+
+}
+
+
+/* =========================================================
+   MOBILE
+   ========================================================= */
+
+@media(max-width: 768px) {
+
+    .login-title {
+
+        font-size: 32px;
+
+    }
+
+    .header {
+
+        font-size: 24px;
+
+        padding: 22px;
+
+    }
+
+    .reward-card {
+
+        margin-bottom: 15px;
+
+    }
+
+}
